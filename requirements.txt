@@ -1,0 +1,7 @@
+discord
+asyncio
+os
+discord.ui
+time
+threading
+python-dotenv
