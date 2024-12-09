@@ -12,9 +12,6 @@ client.help_command = None
 global spc_timeout
 spc_timeout = 15
 
-def config():
-    load_dotenv()
-
 async def timeout_timer(time):
     await asyncio.sleep(time)
     return "time_up"
@@ -445,9 +442,9 @@ async def load():
             await client.load_extension(f'cogs.{filename[:-3]}')
 
 async def main():
-    config()
+    load_dotenv()
     await load()
-    await client.start(os.getenv('token'))
+    await client.start(os.getenv('TOKEN_KEY'))
 
 if __name__ == "__main__":
     asyncio.run(main())
