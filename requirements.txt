@@ -1,7 +1,2 @@
-discord
-asyncio
-os
-discord.ui
-time
-threading
+discord.py
 python-dotenv
