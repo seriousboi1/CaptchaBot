@@ -436,11 +436,6 @@ def lingo_text_to_image(word, size, font_size=None):
 
     return image_buffer
 
-async def load():
-    for filename in os.listdir('./cogs'):
-        if filename.endswith('.py'):
-            await client.load_extension(f'cogs.{filename[:-3]}')
-
 async def main():
     load_dotenv()
     await load()
