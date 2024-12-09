@@ -438,7 +438,6 @@ def lingo_text_to_image(word, size, font_size=None):
 
 async def main():
     load_dotenv()
-    await load()
     await client.start(os.getenv('TOKEN_KEY'))
 
 if __name__ == "__main__":
